@@ -17,6 +17,7 @@ export class EditableFormComponent implements OnInit {
   onClick(value) {
     console.log(value);
     this.service.data = value;
+    this.service.change$.next(true);
     // this.cd.detectChanges();
   }
 }

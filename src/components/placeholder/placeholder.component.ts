@@ -5,6 +5,7 @@ import { SharedDataService } from '../../services/shared-data.service';
   selector: 'app-placeholder',
   templateUrl: './placeholder.component.html',
   styleUrls: ['./placeholder.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlaceholderComponent implements OnInit {
   constructor(protected service: SharedDataService) {}
