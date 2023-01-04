@@ -7,16 +7,12 @@ import { SharedDataService } from '../../services/shared-data.service';
   styleUrls: ['./editable-form.component.css'],
 })
 export class EditableFormComponent implements OnInit {
-  constructor(
-    private service: SharedDataService,
-    private cd: ChangeDetectorRef
-  ) {}
+  constructor(private service: SharedDataService) {}
 
   ngOnInit() {}
 
   onClick(value) {
     console.log(value);
     this.service.data = value;
-    // this.cd.detectChanges();
   }
 }
