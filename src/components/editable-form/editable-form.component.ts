@@ -7,7 +7,7 @@ import { SharedDataService } from '../../services/shared-data.service';
   styleUrls: ['./editable-form.component.css'],
 })
 export class EditableFormComponent implements OnInit {
-  constructor(private service: SharedDataService) {}
+  constructor() {}
 
   ngOnInit() {}
 
